@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:grab/constant.dart';
 
-class GrabMoreIconMenu extends StatelessWidget {
-  const GrabMoreIconMenu({
+class MoreIconMenu extends StatelessWidget {
+  const MoreIconMenu({
     Key? key,
   }) : super(key: key);
 

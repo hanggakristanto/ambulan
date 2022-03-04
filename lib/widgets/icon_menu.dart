@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:grab/constant.dart';
 
-class GrabIconMenu extends StatelessWidget {
-  const GrabIconMenu({
+class IconMenu extends StatelessWidget {
+  const IconMenu({
     Key? key,
     required this.title,
     required this.image,

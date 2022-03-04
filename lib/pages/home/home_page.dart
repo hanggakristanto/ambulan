@@ -10,8 +10,8 @@ import '../../widgets/product_tile.dart';
 // import 'package:carousel_slider/carousel_options.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:provider/provider.dart';
-import 'package:ambulan/widgets/grab_icon_menu.dart';
-import 'package:ambulan/widgets/grab_more_icon_menu.dart';
+import 'package:ambulan/widgets/icon_menu.dart';
+import 'package:ambulan/widgets/more_icon_menu.dart';
 
 final imgList = [
   'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
@@ -446,7 +446,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/stack');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -455,7 +455,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detail');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -464,7 +464,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detaildua');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -473,7 +473,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detail');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -488,7 +488,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/stack');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -497,7 +497,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detail');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
@@ -506,12 +506,12 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     Navigator.pushNamed(context, '/detaildua');
                   },
-                  child: GrabIconMenu(
+                  child: IconMenu(
                     image: "assets/images/feature/car.png",
                     title: "Car",
                   ),
                 ),
-                GrabMoreIconMenu(),
+                MoreIconMenu(),
               ],
             ),
           ],
