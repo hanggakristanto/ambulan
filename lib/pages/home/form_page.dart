@@ -1,3 +1,5 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:ambulan/theme.dart';
 
@@ -252,29 +254,24 @@ class FormPage extends StatelessWidget {
     // }
 
     // print(namaC);
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Form Page'),
+        title: const Text('Detail Ambulan'),
       ),
-      // backgroundColor: backgroundColor1,
-      resizeToAvoidBottomInset: false,
-      body: SafeArea(
-        child: Container(
-          margin: EdgeInsets.symmetric(
-            horizontal: defaultMargin,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // header(),
-              emailInput(),
-              noHp(),
-              passwordInput(),
-              alamat(),
-              signInButton(),
-              Spacer(),
-            ],
-          ),
+      body: Container(
+        margin: EdgeInsets.symmetric(
+          horizontal: defaultMargin,
+        ),
+        child: ListView(
+          children: [
+            emailInput(),
+            noHp(),
+            passwordInput(),
+            alamat(),
+            signInButton(),
+            Spacer(),
+          ],
         ),
       ),
     );
