@@ -42,20 +42,36 @@ class _DetailPageState extends State<DetailPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                FloatingActionButton.extended(
-                  backgroundColor: tombolColor,
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/form');
-                  },
-                  // icon: Icon(Icons.add),
-                  label: Text(
-                    'Donasi',
-                    style: primaryTextStyle.copyWith(
-                      fontSize: 16,
-                      fontWeight: semiBold,
-                    ),
+              GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/form');
+                },
+                child: Container(
+                  padding: EdgeInsets.only(top:12,bottom: 12,left: 12,right: 12),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: Colors.red,
+                    boxShadow: [
+                      BoxShadow(color: Colors.grey, spreadRadius: 3),
+                    ],
                   ),
+                  child: Text("Donasi",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),),
                 ),
+              ),
+                // FloatingActionButton.extended(
+                //   backgroundColor: tombolColor,
+                //   onPressed: () {
+                //     Navigator.pushNamed(context, '/form');
+                //   },
+                //   // icon: Icon(Icons.add),
+                //   label: Text(
+                //     'Donasi',
+                //     style: primaryTextStyle.copyWith(
+                //       fontSize: 16,
+                //       fontWeight: semiBold,
+                //     ),
+                //   ),
+                // ),
               ],
             ),
           ),
@@ -113,11 +129,9 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
     }
 
     Widget tombolKirim() {
-      return Container(
+      return Container(alignment: Alignment.bottomCenter,
         margin: EdgeInsets.only(bottom: 10),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
+        child:
             FloatingActionButton.extended(
               backgroundColor: tombolColor,
               onPressed: () {
@@ -132,8 +146,6 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
                 ),
               ),
             ),
-          ],
-        ),
       );
     }
 
@@ -141,7 +153,6 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
       appBar: AppBar(
         title: const Text('Next page'),
       ),
-      floatingActionButton: tombolKirim(),
       backgroundColor: dasarColor,
       body: ListView(
         children: [
@@ -149,6 +160,9 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
           content(),
         ],
       ),
+      floatingActionButton: tombolKirim(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
     );
   }
 }

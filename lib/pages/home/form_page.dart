@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:ambulan/theme.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:io' show Platform;
 
 class FormPage extends StatelessWidget {
   FormPage({Key? key}) : super(key: key);
@@ -216,7 +218,9 @@ class FormPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
             ),
-            onPressed: () {},
+            onPressed: () {
+              openwhatsapp();
+            },
             child: Text(
               'Kirim Pesan Sekarang',
               style: primaryTextStyle.copyWith(
@@ -228,6 +232,8 @@ class FormPage extends StatelessWidget {
         ),
       );
     }
+
+
 
     // openwhatsapp() async {
     //   var whatsapp = "+919144040888";
@@ -275,5 +281,25 @@ class FormPage extends StatelessWidget {
         ),
       ),
     );
+  }
+  openwhatsapp() async{
+    var whatsapp ="6281329396847?text=Assalamualaikum+Dengan+Ambulan+PPPA%2C%0D%0A%0D%0ASaya+ingin+memesan+ambulan+dengan+data+-+data+berikut+%3A%0D%0A%0D%0A+Nama+%3A+%2A"+namaC.toString()+"%2A%0D%0A+No+KTP+%3A+%2A"+ktpC.toString()+"%2A%0D%0A+No+WA+%3A+%2A"+waC.toString()+"%2A%0D%0A+Alamat+%3A+%2A"+alamatC.toString()+"%2A%0D%0A%0D%0ATerima+Kasih%2C%0D%0A%0D%0AWassalamualaikum+WR.+WB.";
+    var whatsappURl_android = "https://wa.me/$whatsapp";
+    var whatappURL_ios = "https://wa.me/$whatsapp";
+    if(Platform.isIOS){
+      // for iOS phone only
+      if( await canLaunch(whatappURL_ios)){
+        await launch(whatappURL_ios, forceSafariVC: false);
+      }else{
+        await launch(whatsappURl_android);
+      }
+    }else{
+      // android , web
+      if( await canLaunch(whatsappURl_android)){
+        await launch(whatsappURl_android);
+      }else{
+        await launch(whatsappURl_android);
+      }
+    }
   }
 }
