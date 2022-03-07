@@ -42,19 +42,20 @@ class MoreIconMenu extends StatelessWidget {
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
+                shape: RoundedRectangleBorder(
+                    borderRadius:
+                        BorderRadius.vertical(top: Radius.circular(55))),
                 builder: (context) => SingleChildScrollView(
                   padding: EdgeInsets.only(
                       bottom: MediaQuery.of(context).padding.bottom),
                   child: ClipRRect(
                     borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(55),
+                      top: Radius.circular(22),
                     ),
-                    child: ClipRRect(
-                      child: Container(
-                        height: 310,
-                        color: Colors.amber,
-                        child: More(),
-                      ),
+                    child: Container(
+                      height: 310,
+                      color: cardColor,
+                      child: More(),
                     ),
                   ),
                 ),
