@@ -24,14 +24,16 @@ class _DetailPageState extends State<DetailPage> {
       return Stack(
         children: <Widget>[
           Container(
-            width: 500.0,
+            width: MediaQuery.of(context).size.width,
             height: 200.0,
             decoration: BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.cover,
                   image: NetworkImage(
                       'https://img.okezone.com/content/2019/08/26/338/2096952/jadi-perdebatan-dinkes-tangerang-jelaskan-perbedaan-mobil-ambulans-dan-jenazah-TqHMyzRzU6.jpg')),
-              borderRadius: BorderRadius.all(Radius.circular(2.0)),
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(12.0),
+                  bottomRight: Radius.circular(12.0)),
               color: Colors.redAccent,
             ),
           ),
@@ -41,7 +43,7 @@ class _DetailPageState extends State<DetailPage> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 FloatingActionButton.extended(
-                  backgroundColor: primaryColor,
+                  backgroundColor: tombolColor,
                   onPressed: () {
                     Navigator.pushNamed(context, '/form');
                   },
@@ -69,7 +71,7 @@ class _DetailPageState extends State<DetailPage> {
           borderRadius: BorderRadius.vertical(
             top: Radius.circular(24),
           ),
-          color: backgroundColor1,
+          color: dasarColor,
         ),
         child: Column(
           children: [
@@ -85,7 +87,7 @@ class _DetailPageState extends State<DetailPage> {
                 children: [
                   Text(
                     'Keterangan',
-                    style: primaryTextStyle.copyWith(
+                    style: textColorStyle.copyWith(
                         fontWeight: medium, fontSize: 18),
                   ),
                   SizedBox(
@@ -94,7 +96,7 @@ class _DetailPageState extends State<DetailPage> {
                   Text(
                     '''Khusus untuk petugas OPD (Organisasi Perangkat Daerah) yang membantu pelayanan aplikasi Layanan Darurat 112, terdapat fitur baru di aplikasi layanan darurat 112 yaitu Mobile Application for Field Responder. Selain itu, masyarakat juga akan lebih mudah dalam mengakses panggilan darurat dengan menekan Panic Button pada aplikasi tersebut.
 Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 112 hingga 118"''',
-                    style: primaryTextStyle.copyWith(
+                    style: textColorStyle.copyWith(
                       fontWeight: light,
                     ),
                     textAlign: TextAlign.justify,
@@ -117,7 +119,7 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton.extended(
-              backgroundColor: primaryColor,
+              backgroundColor: tombolColor,
               onPressed: () {
                 Navigator.pushNamed(context, '/form');
               },
@@ -140,7 +142,7 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
         title: const Text('Next page'),
       ),
       floatingActionButton: tombolKirim(),
-      backgroundColor: backgroundColor1,
+      backgroundColor: dasarColor,
       body: ListView(
         children: [
           stack2(),

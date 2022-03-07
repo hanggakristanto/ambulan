@@ -210,7 +210,7 @@ class FormPage extends StatelessWidget {
           },
           child: TextButton(
             style: TextButton.styleFrom(
-              backgroundColor: primaryColor,
+              backgroundColor: tombolColor,
               shape: RoundedRectangleBorder(
                 //localvariable can't be referenced before it is declared
                 borderRadius: BorderRadius.circular(12),

@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(22.0),
                         bottomRight: Radius.circular(22.0)),
-                    color: tombolColor,
+                    color: bannerColor,
                   ),
                   height: 200,
                   width: MediaQuery.of(context).size.width,
@@ -482,7 +482,7 @@ class _HomePageState extends State<HomePage> {
 
     Widget spasi() {
       return SizedBox(
-        height: 12,
+        height: 0,
       );
     }
 
@@ -568,6 +568,25 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+        margin: EdgeInsets.all(defaultMargin),
+        // height: double.infinity,
+        // width: double.infinity,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(10),
+              topRight: Radius.circular(10),
+              bottomLeft: Radius.circular(10),
+              bottomRight: Radius.circular(10)),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 1,
+              blurRadius: 7,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
+        ),
       );
     }
 
@@ -603,32 +622,32 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    // return ListView(
-    //   children: [
-    //     header(),
-    //     // banner(),
-    //     newArrivals(),
-    //     spasi(),
-    //     menuIcon2(),
-    //     popularProducts(),
-    //     daftarAmbulan(),
-    //     card(),
-    //   ],
-    // );
-
-    return Scaffold(
-      body: ListView(
-        children: [
-          stack2(),
-          // header(),
-          // banner(),
-          spasi(),
-          menuIcon2(),
-          popularProducts(),
-          daftarAmbulan(),
-          card(),
-        ],
-      ),
+    return ListView(
+      children: [
+        stack2(),
+        // header(),
+        // banner(),
+        spasi(),
+        menuIcon2(),
+        popularProducts(),
+        daftarAmbulan(),
+        card(),
+      ],
     );
+
+    // return Scaffold(
+    //   body: ListView(
+    //     children: [
+    //       stack2(),
+    //       // header(),
+    //       // banner(),
+    //       spasi(),
+    //       menuIcon2(),
+    //       popularProducts(),
+    //       daftarAmbulan(),
+    //       card(),
+    //     ],
+    //   ),
+    // );
   }
 }

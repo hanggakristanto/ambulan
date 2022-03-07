@@ -7,6 +7,7 @@ Color dasarColor = Color(0xfff4f2f5);
 Color tombolColor = Color(0xffe43a54);
 Color bannerColor = Color(0xffe7405a);
 Color cardColor = Color(0xfff8f9fb);
+Color textColor = Color(0xff2f3239);
 // Color dasarColor = Color(0xffE1E4E8);
 // Color tombolColor = Color(0xff44494A);
 
@@ -31,6 +32,10 @@ Color colorNav = Color(0xffA82E32);
 
 TextStyle primaryTextStyle = GoogleFonts.poppins(
   color: primaryTextColor,
+);
+
+TextStyle textColorStyle = GoogleFonts.poppins(
+  color: textColor,
 );
 
 TextStyle primaryTextStyle1 = GoogleFonts.poppins(
