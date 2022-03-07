@@ -1,6 +1,8 @@
 // import 'package:ambulan/models/user_model.dart';
+// showmodalbottomsheet
 // import 'package:ambulan/providers/auth_provider.dart';
 // import 'package:ambulan/pages/home/chat_page.dart';
+import 'package:ambulan/widgets/banner_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ambulan/theme.dart';
 
@@ -36,55 +38,131 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    Widget header() {
-      return Container(
-        margin: EdgeInsets.only(
-          top: defaultMargin,
-          left: defaultMargin,
-          right: defaultMargin,
-        ),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    // 'Selamat Datang ${user.name}',
-                    'LAYANAN PPPA',
-                    textAlign: TextAlign.center,
-                    style: subtitleTextStyle.copyWith(
-                      fontSize: 17,
-                      fontWeight: semiBold,
+    Widget stack2() {
+      return Stack(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(top: 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(22.0),
+                        bottomRight: Radius.circular(22.0)),
+                    color: tombolColor,
+                  ),
+                  height: 200,
+                  width: MediaQuery.of(context).size.width,
+                  child: Container(
+                    margin: EdgeInsets.only(top: 12),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Text(
+                                // 'Selamat Datang ${user.name}',
+                                'LAYANAN PPPA',
+                                textAlign: TextAlign.center,
+                                style: primaryTextStyle.copyWith(
+                                  fontSize: 17,
+                                  fontWeight: semiBold,
+                                ),
+                              ),
+                              Text(
+                                'SedekahOnline Crowdfunding Muslim Pertama di Indonesia',
+                                textAlign: TextAlign.center,
+                                style: primaryTextStyle.copyWith(
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  Text(
-                    'SedekahOnline Crowdfunding Muslim Pertama di Indonesia',
-                    textAlign: TextAlign.center,
-                    style: subtitleTextStyle.copyWith(
-                      fontSize: 12,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
-            // Container(
-            //   width: 54,
-            //   height: 54,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.circle,
-            //     image: DecorationImage(
-            //       image: AssetImage(
-            //         'assets/image_profile.png',
-            //       ),
-            //     ),
-            //   ),
-            // ),
-          ],
-        ),
+          ),
+          Container(
+            margin: EdgeInsets.only(
+              top: 54,
+            ),
+            child: Column(
+              children: const [
+                BannerPage(),
+              ],
+            ),
+          ),
+        ],
       );
     }
 
+    // Widget header() {
+    //   return Container(
+    //     margin: EdgeInsets.only(
+    //       top: defaultMargin,
+    //       left: defaultMargin,
+    //       right: defaultMargin,
+    //     ),
+    //     child: Row(
+    //       children: [
+    //         Expanded(
+    //           child: Column(
+    //             // crossAxisAlignment: CrossAxisAlignment.start,
+    //             children: [
+    //               Text(
+    //                 // 'Selamat Datang ${user.name}',
+    //                 'LAYANAN PPPA',
+    //                 textAlign: TextAlign.center,
+    //                 style: subtitleTextStyle.copyWith(
+    //                   fontSize: 17,
+    //                   fontWeight: semiBold,
+    //                 ),
+    //               ),
+    //               Text(
+    //                 'SedekahOnline Crowdfunding Muslim Pertama di Indonesia',
+    //                 textAlign: TextAlign.center,
+    //                 style: subtitleTextStyle.copyWith(
+    //                   fontSize: 12,
+    //                 ),
+    //               ),
+    //             ],
+    //           ),
+    //         ),
+    //         Container(
+    //           width: 54,
+    //           height: 54,
+    //           decoration: BoxDecoration(
+    //             shape: BoxShape.circle,
+    //             image: DecorationImage(
+    //               image: AssetImage(
+    //                 'assets/image_profile.png',
+    //               ),
+    //             ),
+    //           ),
+    //         ),
+    //       ],
+    //     ),
+    //   );
+    // }
+
+    // Widget banner() {
+    //   return Container(
+    //     margin: EdgeInsets.only(
+    //       top: 14,
+    //     ),
+    //     child: Column(
+    //       children: const [
+    //         BannerPage(),
+    //       ],
+    //     ),
+    //   );
+    // }
     // Widget categories() {
     //   return Container(
     //     margin: EdgeInsets.only(
@@ -326,32 +404,6 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    Widget newArrivals() {
-      return Container(
-        margin: EdgeInsets.only(
-          top: 14,
-        ),
-        child: Card(
-          child: SizedBox(
-            height: 160,
-            width: 160,
-            child: Center(
-              child: Image.network(
-                "https://img.okezone.com/content/2019/08/26/338/2096952/jadi-perdebatan-dinkes-tangerang-jelaskan-perbedaan-mobil-ambulans-dan-jenazah-TqHMyzRzU6.jpg",
-                fit: BoxFit.cover,
-                height: double.infinity,
-                width: double.infinity,
-                alignment: Alignment.center,
-              ),
-            ),
-          ),
-          elevation: 8,
-          shadowColor: Colors.green,
-          margin: EdgeInsets.all(20),
-        ),
-      );
-    }
-
     // Widget menuIcon() {
     //   return Row(
     //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -551,21 +603,32 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    return ListView(
-      children: [
-        header(),
-        // slider(),
-        // categories(),
-        // popularProductsTitle(),
-        // newArrivalsTitle(),
-        newArrivals(),
-        // menuIcon(),
-        spasi(),
-        menuIcon2(),
-        popularProducts(),
-        daftarAmbulan(),
-        card(),
-      ],
+    // return ListView(
+    //   children: [
+    //     header(),
+    //     // banner(),
+    //     newArrivals(),
+    //     spasi(),
+    //     menuIcon2(),
+    //     popularProducts(),
+    //     daftarAmbulan(),
+    //     card(),
+    //   ],
+    // );
+
+    return Scaffold(
+      body: ListView(
+        children: [
+          stack2(),
+          // header(),
+          // banner(),
+          spasi(),
+          menuIcon2(),
+          popularProducts(),
+          daftarAmbulan(),
+          card(),
+        ],
+      ),
     );
   }
 }

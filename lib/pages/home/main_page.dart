@@ -17,22 +17,22 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    Widget cartButton() {
-      return FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: secondaryColor,
-        child: Image.asset(
-          'assets/icon_cart.png',
-          width: 20,
-        ),
-      );
-    }
+    // Widget cartButton() {
+    //   return FloatingActionButton(
+    //     onPressed: () {},
+    //     backgroundColor: secondaryColor,
+    //     child: Image.asset(
+    //       'assets/icon_cart.png',
+    //       width: 20,
+    //     ),
+    //   );
+    // }
 
     Widget customBottomNav() {
       return ClipRRect(
-        borderRadius: BorderRadius.vertical(
-          top: Radius.circular(30),
-        ),
+        // borderRadius: BorderRadius.vertical(
+        //   top: Radius.circular(30),
+        // ),
         child: BottomAppBar(
           shape: CircularNotchedRectangle(),
           notchMargin: 12,
@@ -126,9 +126,9 @@ class _MainPageState extends State<MainPage> {
     }
 
     return Scaffold(
-      backgroundColor: primaryTextColor,
-      floatingActionButton: cartButton(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      backgroundColor: dasarColor,
+      // floatingActionButton: cartButton(),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: customBottomNav(),
       body: body(),
     );

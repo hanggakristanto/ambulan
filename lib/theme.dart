@@ -3,6 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 double defaultMargin = 30.0;
 
+Color dasarColor = Color(0xfff4f2f5);
+Color tombolColor = Color(0xffe43a54);
+Color bannerColor = Color(0xffe7405a);
+Color cardColor = Color(0xfff8f9fb);
+// Color dasarColor = Color(0xffE1E4E8);
+// Color tombolColor = Color(0xff44494A);
+
 Color primaryColor = Color(0xff6C5ECF);
 Color secondaryColor = Color(0xff38ABBE);
 Color alertColor = Color(0xffED6363);

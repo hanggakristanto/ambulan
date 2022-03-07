@@ -8,7 +8,7 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 215,
-      height: 278,
+      height: 238,
       margin: EdgeInsets.only(
         right: defaultMargin,
       ),
@@ -18,9 +18,6 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 30,
-          ),
           Image.asset(
             'assets/image_1.png',
             width: 215,
