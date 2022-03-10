@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-double defaultMargin = 30.0;
+double defaultMargin = 20.0;
 
 Color dasarColor = Color(0xfff4f2f5);
 Color tombolColor = Color(0xffe43a54);

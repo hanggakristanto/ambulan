@@ -7,7 +7,6 @@ import 'dart:io' show Platform;
 
 class FormPage extends StatelessWidget {
   FormPage({Key? key}) : super(key: key);
-
   final TextEditingController namaC = TextEditingController();
   final TextEditingController waC = TextEditingController();
   final TextEditingController ktpC = TextEditingController();
@@ -233,8 +232,6 @@ class FormPage extends StatelessWidget {
       );
     }
 
-
-
     // openwhatsapp() async {
     //   var whatsapp = "+919144040888";
     //   var whatsappURl_android =
@@ -282,23 +279,33 @@ class FormPage extends StatelessWidget {
       ),
     );
   }
-  openwhatsapp() async{
-    var whatsapp ="6281329396847?text=Assalamualaikum+Dengan+Ambulan+PPPA%2C%0D%0A%0D%0ASaya+ingin+memesan+ambulan+dengan+data+-+data+berikut+%3A%0D%0A%0D%0A+Nama+%3A+%2A"+namaC.toString()+"%2A%0D%0A+No+KTP+%3A+%2A"+ktpC.toString()+"%2A%0D%0A+No+WA+%3A+%2A"+waC.toString()+"%2A%0D%0A+Alamat+%3A+%2A"+alamatC.toString()+"%2A%0D%0A%0D%0ATerima+Kasih%2C%0D%0A%0D%0AWassalamualaikum+WR.+WB.";
-    var whatsappURl_android = "https://wa.me/$whatsapp";
-    var whatappURL_ios = "https://wa.me/$whatsapp";
-    if(Platform.isIOS){
+
+  openwhatsapp() async {
+    var whatsapp =
+        "6281329396847?text=Assalamualaikum+Dengan+Ambulan+PPPA%2C%0D%0A%0D%0ASaya+ingin+memesan+ambulan+dengan+data+-+data+berikut+%3A%0D%0A%0D%0A+Nama+%3A+%2A" +
+            namaC.text +
+            "%2A%0D%0A+No+KTP+%3A+%2A" +
+            ktpC.text +
+            "%2A%0D%0A+No+WA+%3A+%2A" +
+            waC.text +
+            "%2A%0D%0A+Alamat+%3A+%2A" +
+            alamatC.text +
+            "%2A%0D%0A%0D%0ATerima+Kasih%2C%0D%0A%0D%0AWassalamualaikum+WR.+WB.";
+    var whatsappURlAndroid = "https://wa.me/$whatsapp";
+    var whatappURLIos = "https://wa.me/$whatsapp";
+    if (Platform.isIOS) {
       // for iOS phone only
-      if( await canLaunch(whatappURL_ios)){
-        await launch(whatappURL_ios, forceSafariVC: false);
-      }else{
-        await launch(whatsappURl_android);
+      if (await canLaunch(whatappURLIos)) {
+        await launch(whatappURLIos, forceSafariVC: false);
+      } else {
+        await launch(whatsappURlAndroid);
       }
-    }else{
+    } else {
       // android , web
-      if( await canLaunch(whatsappURl_android)){
-        await launch(whatsappURl_android);
-      }else{
-        await launch(whatsappURl_android);
+      if (await canLaunch(whatsappURlAndroid)) {
+        await launch(whatsappURlAndroid);
+      } else {
+        await launch(whatsappURlAndroid);
       }
     }
   }

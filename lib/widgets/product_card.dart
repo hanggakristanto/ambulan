@@ -11,18 +11,36 @@ class ProductCard extends StatelessWidget {
       height: 238,
       margin: EdgeInsets.only(
         right: defaultMargin,
+        bottom: 10,
       ),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: Color.fromARGB(255, 255, 255, 255)),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.5),
+            spreadRadius: 1,
+            blurRadius: 7,
+            offset: Offset(0, 3), // changes position of shadow
+          ),
+        ],
+      ),
+      // decoration: BoxDecoration(
+      //   borderRadius: BorderRadius.circular(10),
+      //   color: cardColor,
+      // ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset(
-            'assets/image_1.png',
-            width: 215,
-            height: 150,
-            fit: BoxFit.cover,
+          ClipRRect(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(10),
+              topLeft: Radius.circular(10),
+            ),
+            child: Image.asset(
+              'assets/image11.png',
+              fit: BoxFit.cover,
+            ),
           ),
           Container(
             margin: EdgeInsets.symmetric(
@@ -31,9 +49,12 @@ class ProductCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: 6,
+                ),
                 Text(
-                  'SedekahOnline',
-                  style: secondaryTextStyle.copyWith(
+                  'SedekahOnline.com',
+                  style: textColorStyle.copyWith(
                     fontSize: 12,
                   ),
                 ),
@@ -41,8 +62,8 @@ class ProductCard extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Gandakan Pahala Sedekah Buka Puasa Bagi Penghafal Quran',
-                  style: priceTextStyle.copyWith(
+                  'Ambulan Umat',
+                  style: textColorStyle.copyWith(
                     fontSize: 18,
                     fontWeight: semiBold,
                   ),
@@ -53,7 +74,7 @@ class ProductCard extends StatelessWidget {
                 ),
                 Text(
                   'Rp.50,000',
-                  style: priceTextStyle.copyWith(
+                  style: textColorStyle.copyWith(
                     fontSize: 14,
                     fontWeight: medium,
                   ),

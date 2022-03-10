@@ -22,23 +22,6 @@ class MoreIconMenu extends StatelessWidget {
               title: "More",
             ),
             onTap: () {
-              // Scaffold.of(context).showBottomSheet<void>(
-              //   (BuildContext context) {
-              //     return ClipRRect(
-              //       borderRadius: BorderRadius.vertical(
-              //         top: Radius.circular(12),
-              //       ),
-              //       child: ClipRRect(
-              //         child: Container(
-              //           height: 310,
-              //           color: dasarColor,
-              //           child: More(),
-              //         ),
-              //       ),
-              //     );
-              //   },
-              // );
-              //
               showModalBottomSheet(
                 context: context,
                 isScrollControlled: true,
@@ -53,7 +36,7 @@ class MoreIconMenu extends StatelessWidget {
                       top: Radius.circular(22),
                     ),
                     child: Container(
-                      height: 310,
+                      height: MediaQuery.of(context).size.height * 0.41,
                       color: cardColor,
                       child: More(),
                     ),

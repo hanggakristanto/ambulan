@@ -19,7 +19,7 @@ class More extends StatelessWidget {
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.red),
                     borderRadius: BorderRadius.all(
-                      Radius.circular(12),
+                      Radius.circular(10),
                     ),
                     color: Colors.red,
                   ),
@@ -115,22 +115,22 @@ class More extends StatelessWidget {
               ),
             ],
           ),
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                SizedBox(
-                  height: 22,
-                ),
-                ElevatedButton(
-                    child: const Text('Tutup'),
-                    onPressed: () {
-                      Navigator.pop(context);
-                    })
-              ],
-            ),
-          ),
+          // Center(
+          //   child: Column(
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     mainAxisSize: MainAxisSize.min,
+          //     children: <Widget>[
+          //       SizedBox(
+          //         height: 22,
+          //       ),
+          //       ElevatedButton(
+          //           child: const Text('Tutup'),
+          //           onPressed: () {
+          //             Navigator.pop(context);
+          //           })
+          //     ],
+          //   ),
+          // ),
         ],
       ),
     );

@@ -24,17 +24,15 @@ class _DetailPageState extends State<DetailPage> {
       return Stack(
         children: <Widget>[
           Container(
-            width: MediaQuery.of(context).size.width,
-            height: 200.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: NetworkImage(
-                      'https://img.okezone.com/content/2019/08/26/338/2096952/jadi-perdebatan-dinkes-tangerang-jelaskan-perbedaan-mobil-ambulans-dan-jenazah-TqHMyzRzU6.jpg')),
+            child: ClipRRect(
               borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(12.0),
-                  bottomRight: Radius.circular(12.0)),
-              color: Colors.redAccent,
+                bottomRight: Radius.circular(10),
+                bottomLeft: Radius.circular(10),
+              ),
+              child: Image.asset(
+                'assets/image11.png',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
           Container(
@@ -42,22 +40,26 @@ class _DetailPageState extends State<DetailPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-              GestureDetector(
-              onTap: () {
-                Navigator.pushNamed(context, '/form');
-                },
-                child: Container(
-                  padding: EdgeInsets.only(top:12,bottom: 12,left: 12,right: 12),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.red,
-                    boxShadow: [
-                      BoxShadow(color: Colors.grey, spreadRadius: 3),
-                    ],
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/form');
+                  },
+                  child: Container(
+                    padding: EdgeInsets.only(
+                        top: 12, bottom: 12, left: 12, right: 12),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(25),
+                      color: tombolColor,
+                    ),
+                    child: Text(
+                      "Donasi",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
                   ),
-                  child: Text("Donasi",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),),
                 ),
-              ),
                 // FloatingActionButton.extended(
                 //   backgroundColor: tombolColor,
                 //   onPressed: () {
@@ -129,23 +131,23 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
     }
 
     Widget tombolKirim() {
-      return Container(alignment: Alignment.bottomCenter,
+      return Container(
+        alignment: Alignment.bottomCenter,
         margin: EdgeInsets.only(bottom: 10),
-        child:
-            FloatingActionButton.extended(
-              backgroundColor: tombolColor,
-              onPressed: () {
-                Navigator.pushNamed(context, '/form');
-              },
-              // icon: Icon(Icons.add),
-              label: Text(
-                'Pesan Sekarang',
-                style: primaryTextStyle.copyWith(
-                  fontSize: 16,
-                  fontWeight: semiBold,
-                ),
-              ),
+        child: FloatingActionButton.extended(
+          backgroundColor: tombolColor,
+          onPressed: () {
+            Navigator.pushNamed(context, '/form');
+          },
+          // icon: Icon(Icons.add),
+          label: Text(
+            'Pesan Sekarang',
+            style: primaryTextStyle.copyWith(
+              fontSize: 16,
+              fontWeight: semiBold,
             ),
+          ),
+        ),
       );
     }
 
@@ -153,6 +155,8 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
       appBar: AppBar(
         title: const Text('Next page'),
       ),
+      floatingActionButton: tombolKirim(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       backgroundColor: dasarColor,
       body: ListView(
         children: [
@@ -160,9 +164,6 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
           content(),
         ],
       ),
-      floatingActionButton: tombolKirim(),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-
     );
   }
 }
