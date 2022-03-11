@@ -1,0 +1,14 @@
+String Concatenation : Proses penggabungan dua String atau lebih menggunakan operator penjumlahan (+).
+
+String Interpolation :Proses mengganti placeholder di dalam String dengan nilai dari variabel tertentu.
+
+Dart adalah bahasa yang statically typed, artinya kita perlu mendefinisikan variabel sebelum bisa menggunakannya.
+
+//variabel
+Pada Dart kita mendefinisikan sebuah variabel dengan keyword var.
+
+    var greetings = 'Hello Dart!';
+
+Perhatikan tanda sama dengan (=) di atas. Simbol tersebut dikenal dengan assignment operator. Kode di atas berarti kita memasukkan nilai ‘Hello Dart!’ ke dalam sebuah kotak atau variabel yang bernama greetings. Proses assignment nilai ke variabel ini disebut inisialisasi.
+
+

@@ -1,5 +1,4 @@
 // import 'package:ambulan/models/user_model.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 // showmodalbottomsheet
 // import 'package:ambulan/providers/auth_provider.dart';
 // import 'package:ambulan/pages/home/chat_page.dart';
@@ -9,8 +8,6 @@ import 'package:ambulan/theme.dart';
 
 import '../../widgets/product_card.dart';
 import '../../widgets/product_tile.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:carousel_slider/carousel_options.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:provider/provider.dart';
 import 'package:ambulan/widgets/icon_menu.dart';

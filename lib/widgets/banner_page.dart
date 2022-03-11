@@ -59,7 +59,7 @@ class _BannerPageState extends State<BannerPage> {
                         child: Stack(
                           children: <Widget>[
                             Image.network(item,
-                                fit: BoxFit.cover, width: 1000.0),
+                                fit: BoxFit.fill, height: 700.0, width: 1000.0),
                           ],
                         )),
                   ))
