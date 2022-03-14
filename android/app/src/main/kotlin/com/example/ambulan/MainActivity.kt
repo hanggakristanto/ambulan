@@ -1,4 +1,4 @@
-package com.example.ambulan
+package com.example.mobil_quran
 
 import io.flutter.embedding.android.FlutterActivity
 

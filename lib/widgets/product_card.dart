@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ambulan/theme.dart';
+import 'package:mobil_quran/theme.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({Key? key}) : super(key: key);
@@ -62,7 +62,7 @@ class ProductCard extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Ambulan Umat',
+                  'mobil_quran Umat',
                   style: textColorStyle.copyWith(
                     fontSize: 18,
                     fontWeight: semiBold,

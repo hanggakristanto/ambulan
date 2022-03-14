@@ -2,14 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:mobil_quran/theme.dart';
 
-class DetailPage extends StatefulWidget {
-  const DetailPage({Key? key}) : super(key: key);
+class MobilQuran extends StatefulWidget {
+  const MobilQuran({Key? key}) : super(key: key);
 
   @override
-  State<DetailPage> createState() => _DetailPageState();
+  State<MobilQuran> createState() => _MobilQuranState();
 }
 
-class _DetailPageState extends State<DetailPage> {
+class _MobilQuranState extends State<MobilQuran> {
   List images = [
     'assets/image_1.png',
     'assets/image_1.png',
@@ -24,15 +24,14 @@ class _DetailPageState extends State<DetailPage> {
       return Stack(
         children: <Widget>[
           Container(
+            height: 200,
             child: ClipRRect(
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(10),
                 bottomLeft: Radius.circular(10),
               ),
-              child: Image.asset(
-                'assets/image11.png',
-                fit: BoxFit.cover,
-              ),
+              child: Image.asset('assets/mo.jpeg',
+                  fit: BoxFit.fill, height: 700.0, width: 1000.0),
             ),
           ),
           Container(
@@ -112,8 +111,143 @@ class _DetailPageState extends State<DetailPage> {
                     height: 12,
                   ),
                   Text(
-                    '''Khusus untuk petugas OPD (Organisasi Perangkat Daerah) yang membantu pelayanan aplikasi Layanan Darurat 112, terdapat fitur baru di aplikasi layanan darurat 112 yaitu Mobile Application for Field Responder. Selain itu, masyarakat juga akan lebih mudah dalam mengakses panggilan darurat dengan menekan Panic Button pada aplikasi tersebut.
-Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 112 hingga 118"''',
+                    '''Mobile Qur’an (MOQU) adalah suatu program edukasi dinamis berbasis teknologi dan story telling berbasis tahfidzul Qur’an yang diperuntukkan komunitas, sekolah, majelis taklim, dan masyarakat pada umumnya.
+
+Tujuan Program
+
+Tujuan aktivitas Program MOQU adalah sebagai berikut:
+
+    Memberi motivasi terutama kepada anak-anak untuk cinta kepada Al-Qur’an.
+    Mengajak kepada orang tua dan masyarakat untuk mendukung aktivitas menghafal Al-Qur’an.
+    Mengenalkan DAQU Value kepada masyarakat melalui dongeng yang berbasis multimedia.
+    Inisiasi gerakan Rumah Tahfidz di berbagai wilayah.
+    Membangun spirit generasi Qur’ani di tengah masyarakat.
+
+Sasaran Program
+
+- Sasaran Umum
+
+    Siswa SD – SMA,
+    TPA
+    Majelis Taklim
+    Komunitas
+    Masyarakat umumd
+    Anak-anak korban bencana alam (recovery dan emergency).
+
+- Sasaran Wilayah
+
+    Daerah marjinal
+    Perkotaan
+    Pedesaan
+    Kawasan Rawan Bencana dan Kawasan Terdampak Bencana
+
+- Output dan Indikator Keberhasilan Program
+
+Pencapaian indikator keberhasilan program Mobile Qur’an kepada penerima manfaat antara lain:
+
+    Memahami metode menghafal Al-Qur’an
+    Memahami kisah-kisah Islami
+    Belajar mengamalkan Daqu method (Sholat wajib awal waktu, Sholat sunnah, Puasa Sunnah, Sedekah, dan Menghafal Al-Qur’an)
+    Munculnya motivasi untuk dekat dengan Al Qur’an
+    Pembiasaan mengaji tiap hari
+    Penanaman nilai-nilai kejujuran dan Anti-Korupsi
+    Berkembangnya jumlah Rumah Tahfidz di tengah masyarakat
+
+Petunjuk Pelaksanaan
+
+- Aktivitas Program
+
+MOQU beraktivitas sebagai sarana edukasi yang dilengkapi dengan trainer yang memiliki kompetensi mendongeng dan memahami metode Tahfidzul Qur’an (minimal metode sima’iyyah atau mendengar berulang-ulang).
+
+Edukasi MOQU berbasis multimedia untuk optimalisasi kemampuan audio visual penerima program yang dilaksanakan baik indoor maupun outdoor disesuaikan dengan kondisi dan kemanfaatan situasi.
+
+MOQU dapat digunakan dalam aktivitas recovery paskabencana berbasis tahfidzul Qur’an sebagai sarana trauma healing kepada masyarakat daerah bencana
+
+- Konten Program
+
+Program MOQU memiliki konten-konten setiap kunjungan sebagai berikut:
+
+Usia Sekolah Dasar (6-12 tahun)
+
+• Akhlak Mulia                                            • Menghidupkan yang Sunnah
+
+• Berbakti kepada Orang Tua                       • Tauhid
+
+• Menghafal Al-Qur’an itu mudah                  • Kejujuran dan Anti Korupsi
+
+ 
+
+Usia Sekolah Menengah (13-17 tahun)
+
+• Tauhid: Allah Dulu, Allah Lagi, Allah Terus   • Miracle of Giving
+
+• Berbakti kepada Orang Tua                       • Menghafal Al-Qur’an itu Keren
+
+• Dream, Pray, Action                                  • Just Believe!
+
+• Kejujuran dan Anti Korupsi
+
+ 
+
+Umum
+
+• Tauhid: Allah Dulu, Allah Lagi, Allah Terus   • Just Believe!
+
+• Dream, Pray, Action                                  • Miracle of Giving
+
+• Kejujuran dan Anti Korupsi
+
+ 
+
+Petunjuk Teknis
+
+- Setting Program
+
+Program MOQU dapat dilaksanakan pada 2 situasi, yakni:
+
+    Outdoor/indoor dengan instrument audio visual
+
+Pada situasi ini, trainer dapat mengoptimalkan penggunaan instrument audio visual untuk melakukan training MOQU.
+
+    Outdoor/indoor tanpa instrument audio visual
+
+Pada situasi ini, trainer diharuskan memiliki kompetensi mengarahkan audiens dengan gestur, intonasi, dan kelihaian mendongeng.
+
+Durasi Aksi Mobile Qur’an
+
+Durasi setiap tema kunjungan Program MOQU adalah 60 - 90 menit dengan komposisi sebagai berikut:
+
+    Pengkondisian, tilawah pembukaan selama 5 – 10 menit
+    Lagu-lagu dan video motivasi selama 10 – 15 menit
+    Dongeng dan Pengisahan 20 – 40 menit
+    Praktik dan Motivasi One Day One Ayat (ODOA) dengan reward selama 15 – 20 menit
+    Doa dan Muhasabah selama 5 - 10 menit.
+
+-Proporsi Konten Program
+
+    Motivasi Tahfidzul Qur’an (30%)
+    Dongeng dan Kisah Inspirasi (40%)
+    Metode Tahfidz (20%)
+    Muhasabah (10%)
+
+Materi MOQU juga meliputi DAQU Value yaitu ayat-ayat yang berkaitan dengan DAQU Method yaitu sholat tahajjud, sholat dhuha, shaum sunnat, menghafal Al-Qur’an dan bersedekah yakni:
+
+Al-Qur’an Surat Al-Israa 69 yang berkaitan dengan perintah mendirikan shalat Tahajjud sebagai ibadah tambahan (nafilah).
+
+    Al-Qur’an Surat Al- Baqarah 183 yang berkaitan dengan perintah puasa khususnya puasa Ramadhan.
+    Al-Qur’an Surat Al-An’am 160 yang berkaitan dengan balasan Allah kepada yang berbuat kebaikan dan berkaitan dengan ayat sedekah
+    Al-Qur’an surat Al Qomar 17 tentang kemudahan menghafal AlQur’an.
+
+- Ketentuan Trainer
+
+Trainer MOQU harus memiliki kompetensi sebagai berikut:
+
+    Memahami psikologi perkembangan anak usia 6 – 17 tahun.
+    Memahami metode Tahfidzul Qur’an.
+    Memiliki kompetensi mendongeng dan menyampaikan kisah.
+    Dapat mengoperasikan instrument audio visual dengan baik.
+    Secara teknis, setiap aksi Mobile Qur’an, trainer memakai seragam berlogo PPPA Daarul Qur’an dan atau Mobile Qur’an.
+ ''',
                     style: textColorStyle.copyWith(
                       fontWeight: light,
                     ),

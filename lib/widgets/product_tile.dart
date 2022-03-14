@@ -1,4 +1,4 @@
-import 'package:ambulan/theme.dart';
+import 'package:mobil_quran/theme.dart';
 import 'package:flutter/material.dart';
 
 class ProductTile extends StatelessWidget {
@@ -64,7 +64,7 @@ class ProductTile extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Ambulan Umat Kesehatan Masyarakat ',
+                  'mobil_quran Umat Kesehatan Masyarakat ',
                   style: textColorStyle.copyWith(
                     fontSize: 16,
                     fontWeight: semiBold,
@@ -75,7 +75,7 @@ class ProductTile extends StatelessWidget {
                   height: 6,
                 ),
                 Text(
-                  'Deskripsi ambulan',
+                  'Deskripsi mobil_quran',
                   style: textColorStyle.copyWith(
                     fontWeight: medium,
                   ),
