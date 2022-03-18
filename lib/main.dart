@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import 'package:ambulan/pages/home/coba.dart';
 import 'package:ambulan/pages/home/detail_dua.dart';
 import 'package:ambulan/pages/home/form_page.dart';
 import 'package:ambulan/pages/home/map.dart';
 import 'package:ambulan/pages/home/mobil_quran.dart';
 import 'package:ambulan/pages/home/stack_page.dart';
+=======
+import 'package:mobil_quran/pages/home/detail_dua.dart';
+import 'package:mobil_quran/pages/home/form_page.dart';
+import 'package:mobil_quran/pages/home/mobil_quran.dart';
+import 'package:mobil_quran/pages/home/stack_page.dart';
+>>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
 import 'package:flutter/material.dart';
-import 'package:ambulan/pages/splash_page.dart';
-import 'package:ambulan/pages/home/main_page.dart';
-import 'package:ambulan/pages/home/detail_page.dart';
+import 'package:mobil_quran/pages/splash_page.dart';
+import 'package:mobil_quran/pages/home/main_page.dart';
+import 'package:mobil_quran/pages/home/detail_page.dart';
 import 'dart:io';
 
 class MyHttpOverrides extends HttpOverrides {
@@ -40,8 +47,11 @@ class MyApp extends StatelessWidget {
         '/form': (context) => FormPage(),
         '/stack': (context) => StackPage(),
         '/mobilquran': (context) => MobilQuran(),
+<<<<<<< HEAD
         '/coba': (context) => Coba(),
         '/map': (context) => Map(),
+=======
+>>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
       },
     );
   }

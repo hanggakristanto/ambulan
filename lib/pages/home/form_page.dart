@@ -1,7 +1,7 @@
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:ambulan/theme.dart';
+import 'package:mobil_quran/theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:io' show Platform;
 
@@ -260,7 +260,11 @@ class FormPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+<<<<<<< HEAD
         title: const Text('Form Pemesanan'),
+=======
+        title: const Text('Detail mobil_quran'),
+>>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
       ),
       body: Container(
         margin: EdgeInsets.symmetric(
@@ -282,7 +286,7 @@ class FormPage extends StatelessWidget {
 
   openwhatsapp() async {
     var whatsapp =
-        "6281329396847?text=Assalamualaikum+Dengan+Ambulan+PPPA%2C%0D%0A%0D%0ASaya+ingin+memesan+ambulan+dengan+data+-+data+berikut+%3A%0D%0A%0D%0A+Nama+%3A+%2A" +
+        "6281329396847?text=Assalamualaikum+Dengan+mobil_quran+PPPA%2C%0D%0A%0D%0ASaya+ingin+memesan+mobil_quran+dengan+data+-+data+berikut+%3A%0D%0A%0D%0A+Nama+%3A+%2A" +
             namaC.text +
             "%2A%0D%0A+No+KTP+%3A+%2A" +
             ktpC.text +

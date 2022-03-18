@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ambulan/widgets/icon_menu.dart';
+import 'package:mobil_quran/widgets/icon_menu.dart';
 
 class More extends StatelessWidget {
   const More({Key? key}) : super(key: key);

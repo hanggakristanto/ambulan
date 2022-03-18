@@ -5,6 +5,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 final imgList = [
+<<<<<<< HEAD
   'assets/img_1.jpg',
   'assets/img_2.jpg',
   'assets/img_1.jpg',
@@ -15,6 +16,14 @@ final imgList = [
   // 'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
   // 'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
   // 'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg'
+=======
+  'https://assajidin.com/wp-content/uploads/2021/03/maxresdefault.jpg',
+  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
+  'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
+  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
+  'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
+  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg'
+>>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
 ];
 
 class BannerPage extends StatefulWidget {

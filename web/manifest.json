@@ -1,6 +1,6 @@
 {
-    "name": "ambulan",
-    "short_name": "ambulan",
+    "name": "mobil_quran",
+    "short_name": "mobil_quran",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

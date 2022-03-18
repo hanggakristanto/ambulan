@@ -1,7 +1,7 @@
-import 'package:ambulan/widgets/more.dart';
+import 'package:mobil_quran/widgets/more.dart';
 import 'package:flutter/material.dart';
-import 'package:ambulan/widgets/icon_menu.dart';
-import 'package:ambulan/theme.dart';
+import 'package:mobil_quran/widgets/icon_menu.dart';
+import 'package:mobil_quran/theme.dart';
 // import 'package:grab/constant.dart';
 
 class MoreIconMenu extends StatelessWidget {

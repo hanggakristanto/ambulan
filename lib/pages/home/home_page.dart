@@ -1,18 +1,24 @@
-// import 'package:ambulan/models/user_model.dart';
+// import 'package:mobil_quran/models/user_model.dart';
 // showmodalbottomsheet
+<<<<<<< HEAD
 // import 'package:ambulan/providers/auth_provider.dart';
 // import 'package:ambulan/pages/home/chat_page.dart';
 import 'package:ambulan/widgets/banner_page.dart';
 import 'package:ambulan/widgets/list_ambulan.dart';
+=======
+// import 'package:mobil_quran/providers/auth_provider.dart';
+// import 'package:mobil_quran/pages/home/chat_page.dart';
+import 'package:mobil_quran/widgets/banner_page.dart';
+>>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
 import 'package:flutter/material.dart';
-import 'package:ambulan/theme.dart';
+import 'package:mobil_quran/theme.dart';
 
 import '../../widgets/product_card.dart';
 import '../../widgets/product_tile.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:provider/provider.dart';
-import 'package:ambulan/widgets/icon_menu.dart';
-import 'package:ambulan/widgets/more_icon_menu.dart';
+import 'package:mobil_quran/widgets/icon_menu.dart';
+import 'package:mobil_quran/widgets/more_icon_menu.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -450,7 +456,7 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    Widget daftarAmbulan() {
+    Widget daftarmobil_quran() {
       return Container(
         margin: EdgeInsets.only(
           top: defaultMargin,
@@ -458,7 +464,7 @@ class _HomePageState extends State<HomePage> {
           right: defaultMargin,
         ),
         child: Text(
-          'Daftar Ambulan',
+          'Daftar mobil_quran',
           style: textColorStyle.copyWith(
             fontSize: 22,
             fontWeight: semiBold,
@@ -521,7 +527,7 @@ class _HomePageState extends State<HomePage> {
         daftarBerita(),
         popularProducts(),
         spasi(),
-        daftarAmbulan(),
+        daftarmobil_quran(),
         card(),
         daftarAmbulan2(),
         card2(),
@@ -537,7 +543,7 @@ class _HomePageState extends State<HomePage> {
     //       spasi(),
     //       menuIcon2(),
     //       popularProducts(),
-    //       daftarAmbulan(),
+    //       daftarmobil_quran(),
     //       card(),
     //     ],
     //   ),
