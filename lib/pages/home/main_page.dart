@@ -1,9 +1,9 @@
-import 'package:mobil_quran/pages/home/chat_page.dart';
-import 'package:mobil_quran/pages/home/home_page.dart';
-import 'package:mobil_quran/pages/home/wishlist_page.dart';
-import 'package:mobil_quran/pages/home/profile_page.dart';
+import 'package:ambulan/pages/home/chat_page.dart';
+import 'package:ambulan/pages/home/home_page.dart';
+import 'package:ambulan/pages/home/wishlist_page.dart';
+import 'package:ambulan/pages/home/profile_page.dart';
 import 'package:flutter/material.dart';
-import 'package:mobil_quran/theme.dart';
+import 'package:ambulan/theme.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);

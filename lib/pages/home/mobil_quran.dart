@@ -1,10 +1,6 @@
 // import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:ambulan/theme.dart';
-=======
-import 'package:mobil_quran/theme.dart';
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
 
 class MobilQuran extends StatefulWidget {
   const MobilQuran({Key? key}) : super(key: key);
@@ -28,7 +24,6 @@ class _MobilQuranState extends State<MobilQuran> {
       return Stack(
         children: <Widget>[
           Container(
-<<<<<<< HEAD
             margin: EdgeInsets.only(
               top: 20,
               left: defaultMargin,
@@ -53,8 +48,6 @@ class _MobilQuranState extends State<MobilQuran> {
             ),
           ),
           Container(
-=======
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
             height: 200,
             child: ClipRRect(
               borderRadius: BorderRadius.only(
@@ -90,8 +83,6 @@ class _MobilQuranState extends State<MobilQuran> {
                     ),
                   ),
                 ),
-<<<<<<< HEAD
-=======
                 // FloatingActionButton.extended(
                 //   backgroundColor: tombolColor,
                 //   onPressed: () {
@@ -106,7 +97,6 @@ class _MobilQuranState extends State<MobilQuran> {
                 //     ),
                 //   ),
                 // ),
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
               ],
             ),
           ),
@@ -145,7 +135,6 @@ class _MobilQuranState extends State<MobilQuran> {
                     height: 12,
                   ),
                   Text(
-<<<<<<< HEAD
                     '''Mobile Qur’an (MOQU) adalah suatu program edukasi dinamis berbasis teknologi dan story telling berbasis tahfidzul Qur’an yang diperuntukkan komunitas, sekolah, majelis taklim, dan masyarakat pada umumnya.''',
                     style: textColorStyle.copyWith(
                       fontWeight: light,
@@ -233,8 +222,7 @@ Umum
 • Dream, Pray, Action
 • Miracle of Giving
 • Kejujuran dan Anti Korupsi
-''',
-=======
+'''
                     '''Mobile Qur’an (MOQU) adalah suatu program edukasi dinamis berbasis teknologi dan story telling berbasis tahfidzul Qur’an yang diperuntukkan komunitas, sekolah, majelis taklim, dan masyarakat pada umumnya.
 
 Tujuan Program
@@ -372,7 +360,6 @@ Trainer MOQU harus memiliki kompetensi sebagai berikut:
     Dapat mengoperasikan instrument audio visual dengan baik.
     Secara teknis, setiap aksi Mobile Qur’an, trainer memakai seragam berlogo PPPA Daarul Qur’an dan atau Mobile Qur’an.
  ''',
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
                     style: textColorStyle.copyWith(
                       fontWeight: light,
                     ),
@@ -398,10 +385,7 @@ Trainer MOQU harus memiliki kompetensi sebagai berikut:
           onPressed: () {
             Navigator.pushNamed(context, '/form');
           },
-<<<<<<< HEAD
-=======
           // icon: Icon(Icons.add),
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
           label: Text(
             'Pesan Sekarang',
             style: primaryTextStyle.copyWith(
@@ -414,15 +398,11 @@ Trainer MOQU harus memiliki kompetensi sebagai berikut:
     }
 
     return Scaffold(
-<<<<<<< HEAD
       floatingActionButton: tombolKirim(),
-=======
       appBar: AppBar(
         title: const Text('Next page'),
       ),
-      floatingActionButton: tombolKirim(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8
       backgroundColor: dasarColor,
       body: ListView(
         children: [
@@ -433,8 +413,6 @@ Trainer MOQU harus memiliki kompetensi sebagai berikut:
     );
   }
 }
-<<<<<<< HEAD
-=======
 // class ProductPage extends StatefulWidget {
 //   const ProductPage({Key? key}) : super(key: key);
 
@@ -709,4 +687,3 @@ Trainer MOQU harus memiliki kompetensi sebagai berikut:
 //     );
 //   }
 // }
->>>>>>> e81774327cd6b29d9330efa0dce2db1ed1fe7fe8

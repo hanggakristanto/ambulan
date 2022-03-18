@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobil_quran/theme.dart';
+import 'package:ambulan/theme.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -25,7 +25,7 @@ class StackPage extends StatelessWidget {
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: NetworkImage(
-                          'https://img.okezone.com/content/2019/08/26/338/2096952/jadi-perdebatan-dinkes-tangerang-jelaskan-perbedaan-mobil-mobil_qurans-dan-jenazah-TqHMyzRzU6.jpg')),
+                          'https://img.okezone.com/content/2019/08/26/338/2096952/jadi-perdebatan-dinkes-tangerang-jelaskan-perbedaan-mobil-ambulans-dan-jenazah-TqHMyzRzU6.jpg')),
                   borderRadius: BorderRadius.all(Radius.circular(1.0)),
                   color: Colors.redAccent,
                 ),
@@ -134,7 +134,7 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Detail mobil_quran'),
+        title: const Text('Detail ambulan'),
       ),
       floatingActionButton: tombolKirim(),
       body: Stack(children: [
