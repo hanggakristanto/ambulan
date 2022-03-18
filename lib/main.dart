@@ -1,5 +1,8 @@
+import 'package:ambulan/pages/home/coba.dart';
 import 'package:ambulan/pages/home/detail_dua.dart';
 import 'package:ambulan/pages/home/form_page.dart';
+import 'package:ambulan/pages/home/map.dart';
+import 'package:ambulan/pages/home/mobil_quran.dart';
 import 'package:ambulan/pages/home/stack_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ambulan/pages/splash_page.dart';
@@ -22,7 +25,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) :super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +39,9 @@ class MyApp extends StatelessWidget {
         '/detaildua': (context) => DetailDua(),
         '/form': (context) => FormPage(),
         '/stack': (context) => StackPage(),
+        '/mobilquran': (context) => MobilQuran(),
+        '/coba': (context) => Coba(),
+        '/map': (context) => Map(),
       },
     );
   }

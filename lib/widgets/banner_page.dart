@@ -1,16 +1,20 @@
-import 'package:ambulan/theme.dart';
+// import 'package:ambulan/theme.dart';
 // import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 final imgList = [
-  'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
-  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
-  'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
-  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
-  'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
-  'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg'
+  'assets/img_1.jpg',
+  'assets/img_2.jpg',
+  'assets/img_1.jpg',
+  'assets/img_2.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211207095422-2021-12-07camp_slider095405.jpg',
+  // 'https://sedekahonline.com/uploads/camp_slider/20211112110747-2021-11-12camp_slider110714.jpg'
 ];
 
 class BannerPage extends StatefulWidget {
@@ -58,7 +62,7 @@ class _BannerPageState extends State<BannerPage> {
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         child: Stack(
                           children: <Widget>[
-                            Image.network(item,
+                            Image.asset(item,
                                 fit: BoxFit.fill, height: 700.0, width: 1000.0),
                           ],
                         )),

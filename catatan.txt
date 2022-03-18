@@ -10,5 +10,43 @@ Pada Dart kita mendefinisikan sebuah variabel dengan keyword var.
     var greetings = 'Hello Dart!';
 
 Perhatikan tanda sama dengan (=) di atas. Simbol tersebut dikenal dengan assignment operator. Kode di atas berarti kita memasukkan nilai ‘Hello Dart!’ ke dalam sebuah kotak atau variabel yang bernama greetings. Proses assignment nilai ke variabel ini disebut inisialisasi.
+//type data
+Beberapa tipe data yang didukung oleh Dart antara lain:
+List :	Daftar nilai :	[1, 2, 3], [‘a’, ‘b’, ‘c’]
+Map :	Pasangan key-value :	{“x”: 4, “y”: 10}
+
+const bersifat compile-time constants, artinya nilai tersebut harus sudah diketahui sebelum program dijalankan. Sedangkan 
+final, nilainya masih bisa diinisialisasi ketika runtime atau ketika aplikasi berjalan.
+
+//null safety
+Sejak versi 2.12, Dart menghadirkan fitur Null Safety
+
+//collections
+ Collections merupakan sebuah objek yang bisa menyimpan kumpulan objek lain. Contoh collections pada Dart antara lain List, Set, dan Map.
 
 
+//oop
+Pada Dart kita mendefinisikan attribute dengan variabel, sedangkan behaviour sering direpresentasikan sebagai function.
+
+//construct
+Beberapa perbedaan antara constructor dan fungsi biasa adalah:
+
+    Constructor memiliki nama yang sama dengan nama kelas.
+    Constructor tidak memiliki nilai kembalian (return type).
+    Constructor akan secara otomatis dipanggil ketika sebuah objek dibuat.
+    Jika kita tidak mendefinisikan constructor, default constructor tanpa argumen akan dibuat.
+
+keyword atau anotasi @override menunjukkan fungsi tersebut mengesampingkan fungsi yang ada di interface atau kelas induknya, lalu menggunakan fungsi yang ada dalam kelas itu sendiri sebagai gantinya.
+
+Mixin digunakan untuk menggabungkan dan memanfaatkan property/method dari beberapa kelas lain.
+Extension methods digunakan untuk membuat method tambahan pada kelas yang sudah ada.
+
+//paradigma
+ immutable, artinya kita tidak bisa mengubah sebuah variabel ketika sudah diinisialisasi. 
+
+//future
+ Seperti pada fungsi main() ada tiga blok kode yang mewakili state Future:
+
+    Fungsi getOrder() yang berisi Future yang masih uncompleted.
+    Method then() yang menangani kondisi completed with data.
+    Method catchError() yang menangani kondisi completed with error.

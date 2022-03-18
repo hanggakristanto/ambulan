@@ -22,7 +22,30 @@ class IconMenu extends StatelessWidget {
           image: AssetImage(image),
         ),
         const SizedBox(height: 5),
-        Text(title),
+
+        Center(child: Text(title)),
+        // Container(
+        //     child: Text(
+        //   title,
+        //   textAlign: TextAlign.center,
+        //   overflow: TextOverflow.ellipsis,
+        //   style: TextStyle(fontWeight: FontWeight.bold),
+        // )),
+        // Flexible(
+        //   child: Column(
+        //     children: [
+        //       Text(
+        //         title,
+        //         style: TextStyle(
+        //             fontFamily: "Roboto",
+        //             color: Colors.black,
+        //             fontSize: 10.0,
+        //             fontWeight: FontWeight.bold),
+        //         overflow: TextOverflow.clip,
+        //       ),
+        //     ],
+        //   ),
+        // ),
       ],
     );
   }

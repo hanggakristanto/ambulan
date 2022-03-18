@@ -3,6 +3,7 @@
 // import 'package:ambulan/providers/auth_provider.dart';
 // import 'package:ambulan/pages/home/chat_page.dart';
 import 'package:ambulan/widgets/banner_page.dart';
+import 'package:ambulan/widgets/list_ambulan.dart';
 import 'package:flutter/material.dart';
 import 'package:ambulan/theme.dart';
 
@@ -288,22 +289,22 @@ class _HomePageState extends State<HomePage> {
     //   );
     // }
 
-    Widget popularProductsTitle() {
-      return Container(
-        margin: EdgeInsets.only(
-          top: defaultMargin,
-          left: defaultMargin,
-          right: defaultMargin,
-        ),
-        child: Text(
-          'Popular Products',
-          style: secondaryTextStyle.copyWith(
-            fontSize: 22,
-            fontWeight: semiBold,
-          ),
-        ),
-      );
-    }
+    // Widget popularProductsTitle() {
+    //   return Container(
+    //     margin: EdgeInsets.only(
+    //       top: defaultMargin,
+    //       left: defaultMargin,
+    //       right: defaultMargin,
+    //     ),
+    //     child: Text(
+    //       'Popular Products',
+    //       style: secondaryTextStyle.copyWith(
+    //         fontSize: 22,
+    //         fontWeight: semiBold,
+    //       ),
+    //     ),
+    //   );
+    // }
 
     Widget menuIcon2() {
       return Container(
@@ -319,7 +320,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "Qur'an Call",
                   ),
                 ),
                 GestureDetector(
@@ -328,16 +329,16 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "Simpatik",
                   ),
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/detaildua');
+                    Navigator.pushNamed(context, '/mobilquran');
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "Mobil Quran",
                   ),
                 ),
                 GestureDetector(
@@ -357,11 +358,11 @@ class _HomePageState extends State<HomePage> {
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/stack');
+                    Navigator.pushNamed(context, '/coba');
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "SIGAB",
                   ),
                 ),
                 GestureDetector(
@@ -370,16 +371,16 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "KASIH",
                   ),
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/detaildua');
+                    Navigator.pushNamed(context, '/map');
                   },
                   child: IconMenu(
                     image: "assets/images/feature/car.png",
-                    title: "Car",
+                    title: "Tahfidz",
                   ),
                 ),
                 MoreIconMenu(),
@@ -481,6 +482,38 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
+    Widget daftarAmbulan2() {
+      return Container(
+        margin: EdgeInsets.only(
+          top: defaultMargin,
+          left: defaultMargin,
+          right: defaultMargin,
+        ),
+        child: Text(
+          'Daftar Ambulan',
+          style: textColorStyle.copyWith(
+            fontSize: 22,
+            fontWeight: semiBold,
+          ),
+        ),
+      );
+    }
+
+    Widget card2() {
+      return Container(
+        margin: EdgeInsets.only(
+          top: 14,
+        ),
+        child: Column(
+          children: const [
+            ListAmbulan(),
+            ListAmbulan(),
+            ListAmbulan(),
+          ],
+        ),
+      );
+    }
+
     return ListView(
       children: [
         stack2(),
@@ -490,6 +523,8 @@ class _HomePageState extends State<HomePage> {
         spasi(),
         daftarAmbulan(),
         card(),
+        daftarAmbulan2(),
+        card2(),
       ],
     );
 

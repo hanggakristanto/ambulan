@@ -73,7 +73,7 @@ class _MainPageState extends State<MainPage> {
                     color: currentIndex == 1 ? cardColor : Color(0xff808191),
                   ),
                 ),
-                label: 'Chat',
+                label: 'Bantuan',
               ),
               BottomNavigationBarItem(
                 icon: Container(
@@ -87,7 +87,7 @@ class _MainPageState extends State<MainPage> {
                     color: currentIndex == 2 ? cardColor : Color(0xff808191),
                   ),
                 ),
-                label: 'Like',
+                label: 'Sedekah',
               ),
               BottomNavigationBarItem(
                 icon: Container(

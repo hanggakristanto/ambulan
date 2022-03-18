@@ -153,7 +153,7 @@ Baca selengkapnya di artikel "Daftar Nomor Telepon Darurat di Indonesia, dari 11
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Next page'),
+        title: const Text('Ambulan'),
       ),
       floatingActionButton: tombolKirim(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,

@@ -41,7 +41,7 @@ class More extends StatelessWidget {
                 },
                 child: IconMenu(
                   image: "assets/images/feature/car.png",
-                  title: "Car",
+                  title: "BTQ",
                 ),
               ),
               GestureDetector(
@@ -50,7 +50,7 @@ class More extends StatelessWidget {
                 },
                 child: IconMenu(
                   image: "assets/images/feature/car.png",
-                  title: "Car",
+                  title: "Simpatik",
                 ),
               ),
               GestureDetector(
